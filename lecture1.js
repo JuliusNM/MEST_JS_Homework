@@ -48,7 +48,7 @@ var pizza = {
   type:'Neapolitan;',
   variant:'Marinara',
   size: 'full',
-  price: 100',
+  price: 100'
     };
 
 /*Object constructor function*/
@@ -56,8 +56,8 @@ var pizza = {
 function Pizza(type, variant, size, price) {
 	this.type = type; 
 	this.variant = variant;
-  this.size = size;
-  this.price = price;
+	this.size = size;
+	this.price = price;
 } 
 	var pizza = new Pizza('Neapolitan', 'Marinara', 'full', '100');
 
@@ -65,10 +65,10 @@ function Pizza(type, variant, size, price) {
 /*Object.create*/
 
 var pizza = {
-	type:'Neapolitan;',
+  type:'Neapolitan;',
   variant:'Marinara',
   size: 'full',
-  price: 100',
+  price: 100'
 };
 
 var pizzaaa = object.create(pizza); 
