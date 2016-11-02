@@ -8,35 +8,26 @@
  *      console.log(this);
  *  }
  *
- 
+ Outputs the windows object on the console. 'this' method points to the parent object which is the window object.
  
  
  *  func(); // what is the output? Why?
  *
  Window {speechSynthesis: SpeechSynthesis, caches: CacheStorage, localStorage: Storage, sessionStorage: Storage, webkitStorageInfo: DeprecatedStorageInfo…}
  
- returns the global variable
+Returns the obj object because 'this' in the function 'func' points to the obj object.
  
  *  var obj = {
  *      func: func // what is the second func here?
  *  };
- second func defines(declares the first function)
- 
+
+ display the windows object 'func' is now bound to the windows object
  function func() {
    console.log(this);
   }
  *
  *  obj.func(); //what is the output? try to explain why.
  
- Object {}
-func
-:
-func()
-__proto__
-:
-Object
-
-
 
  *
  *  obj.func.bind(window)(); // what is the output? why?
@@ -46,10 +37,7 @@ Object
  returns the window. binds the object function with the window.
  
  *  obj.func.bind(this)();  // what is the output? why?
- 
- Window {speechSynthesis: SpeechSynthesis, caches: CacheStorage, localStorage: Storage, sessionStorage: Storage, webkitStorageInfo: DeprecatedStorageInfo…}
- 
- binds the object func with the window it resides
+Outputs the windows object because 'this' binds the 'func' to the windows object.
  
  *
  *  var people = {
@@ -78,8 +66,10 @@ console.log(toTitleCase('hi, welcome to mest;'));
 /*
  *  3. Write reg expresion for email validation(This is not an easy
  *  question, please make sure you do your research on this).
- *
  */
+
+ var reGex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  reGex.test('juliusngigim@gmail.com');
 
 /*
  * 4. what is localStorage and sessionStorge under window object? What is the
