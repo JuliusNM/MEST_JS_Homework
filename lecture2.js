@@ -1,11 +1,11 @@
 /*
  * 1. explain the special meaning of the following special characters
- \0 the null character 
+ \0 the null character - It is an empty space
  \n new line - inserts a new line
- \r carriage return
+ \r carriage return - enters a new line and moves the cursor to the left
  \v vertical tab- Position the form at the next line tab stop." (ignored on Safari.)
- \t
- \backspace  
+ \t - inserts a tab
+ \backspace- deletes a character to the left
  \b -Move the cursor one position leftwards." (ignored on Safari.)
  The backslash escape character turns special characters into string characters:
  \f form feed -On printers, load the next page. In some terminal emulators, it clears the screen." (truncates the string on Safari.)
